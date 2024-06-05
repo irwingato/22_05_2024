@@ -1,0 +1,26 @@
+Redes de Computadores:
+São computadores interconectados entre eles que podem trocar dados e compartilhar recursos entre si, são também conhecidos como nós. As redes de computadores quebram barreiras geográficas, e possibilita que informações de pessoas sejam compartilhadas a milhares de quilômetros de distância, e nessas redes de computadores existem cabos, dispositivos eletrônicos dedicados para o encaminhamento de mensagens como roteadores, switchs e hubs. 
+E existem diversos tipos de protocolos para que esses computadores interligados funcionam como o protocolo TCP/IP, HTTP, HTTPS, FTP, SMTP, DNS, SSL, UDP, e esses protocolos podem abranger vária camadas do modelo OSI. 
+O modelo atualmente utilizado é o TCP/IP, pois o modelo OSI demorava muito para carregar devido a criptografia e várias camadas implementadas, o modelo TCP/IP combina dois outros protocolos, o protocolo de controle de transmissão (TCP), que realiza a transimissão de dados e o Protocolo de Internet (IP), responsável pelo roteamento e endereçamento de pacotes de dados.
+O protocolo TCP/IP é formado por quatro camadas principais:
+
+Camada de aplicação
+A camada de aplicação é responsável pelos programas e protocolos que possibilitam o TCP/IP dar íncio a transmissão de dados.
+Essa camada serve para que TCP/IP determine qual a finalidade específica da transmissão de dados. Após a definição do tipo de transmissão, o processo é enviado para as próximas camadas
+
+Camada de transporte
+Atua como link entra a camada de aplicação e transporte, pode receber dados de diversas conexões e repassá-los para a camada de rede, utiliza-se de segmentos para transportar estes dados.
+
+Camada de Rede
+A camada de rede também conhecido como camada de Internet. É responsável pelo roteamento dos pacotes de dados entre os dispostivos em diferentes redes. Essa camada cuida das interfaces dos hosts e faz a transformação dos pacotes de dados em datagramas
+Cada datagrama possui dois elementos principais: um header (cabeçalho) que entre alguns dados, inclui os endereços IP da origem e destino, e o payload que traz os dados em si que são transmitidos
+Essa camada utiliza o protocolo IP para proporcionar endereçamento único, roteamento eficiente e outros serviços necessários para o encaminhamento bem sucedido dos pacotes de dados em uma rede
+
+Camada de enlace
+Encapsula o datagrama no quadro. incluindo cabeçalho, trailer, acesso ao canal de meio compartilhada, endereços "MAC" usados nos cabeçalhos de quadro para identificar origem, destino.
+Raramente usado em enlace com pouco erro de bit (fibra, alguns pares trançados), enlaces sme fio: altas taxas de erro
+Detecção de erro:
+Erros causados por atenuação de sinal, ruído.
+Receptor detecta presença de erros: descarta quadro
+Half-duplex e full-duplex
+Com half-duplex, os nós nas duas extremidades do enlace podem transmitir, mas não ao mesmo tempo
